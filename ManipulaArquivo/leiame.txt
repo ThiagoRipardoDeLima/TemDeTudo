@@ -1,0 +1,5 @@
+﻿Essa pasta deve conter os documentos:
+
+>  Documentos de Teste
+>  Homologação e liberação de versão (Versão liberada)
+>  WAR ou Executáveis da versão 
