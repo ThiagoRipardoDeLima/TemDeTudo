@@ -5,7 +5,7 @@ using System.Text;
 
 namespace NetBasic
 {
-    class Teste
+    class LeituraDeArquivo
     {
         static void Main(String[] args){
             var lines = ReadFrom("leiame.txt");
