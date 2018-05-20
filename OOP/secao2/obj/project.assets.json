@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thiago Ripardo\\Documents\\Projetos\\OOP\\secao2\\secao2.csproj",
+      "projectUniqueName": "C:\\Users\\Thiago Ripardo\\Documents\\Projetos\\TemDeTudo\\OOP\\secao2\\secao2.csproj",
       "projectName": "secao2",
-      "projectPath": "C:\\Users\\Thiago Ripardo\\Documents\\Projetos\\OOP\\secao2\\secao2.csproj",
+      "projectPath": "C:\\Users\\Thiago Ripardo\\Documents\\Projetos\\TemDeTudo\\OOP\\secao2\\secao2.csproj",
       "packagesPath": "C:\\Users\\Thiago Ripardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thiago Ripardo\\Documents\\Projetos\\OOP\\secao2\\obj\\",
+      "outputPath": "C:\\Users\\Thiago Ripardo\\Documents\\Projetos\\TemDeTudo\\OOP\\secao2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
