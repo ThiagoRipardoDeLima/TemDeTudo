@@ -7,16 +7,21 @@ namespace S2E2
     {
         static void Main(string[] args)
         {
-            Funcionario funcionario = new Funcionario();
+            Funcionario funcionario;
+
+            Console.Write("cpf: ");
+            string cpf = Console.ReadLine();
 
             Console.Write("Nome: ");
-            funcionario.Nome = Console.ReadLine();
+            string nome = Console.ReadLine();
 
             Console.Write("Salário Bruto: ");
-            funcionario.SalarioBruto = double.TryParse(Console.ReadLine(), out var value) ? value : 0;
+            double salarioBruto = double.TryParse(Console.ReadLine(), out var value) ? value : 0;
 
             Console.Write("Desconto: ");
-            funcionario.Desconto = double.TryParse(Console.ReadLine(), out value) ? value : 0;
+            double Desconto = double.TryParse(Console.ReadLine(), out value) ? value : 0;
+
+            funcionario = new Funcionario(nome, cpf, salarioBruto);
 
             Console.WriteLine(funcionario);
 

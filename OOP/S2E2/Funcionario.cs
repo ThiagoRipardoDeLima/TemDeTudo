@@ -3,25 +3,40 @@ using System.Globalization;
 
 namespace S2E2
 {
-    class Funcionario
+    public class Funcionario
     {
-        private string nome;
-        private double salarioBruto;
-        private double desconto;
+        public string nome { get; set; }
+        public string cpf { get; private set; }
+        public double salarioBruto { get; private set; }
+        public double desconto { get; private set; }
 
-        public string Nome { get => nome; set => nome = value; }
-        public double SalarioBruto { get => salarioBruto; set => salarioBruto = value; }
-        public double Desconto { get => desconto; set => desconto = value; }
+        public Funcionario(string nome, string cpf)
+        {
+            this.nome = nome;
+            this.cpf = cpf;
+            this.salarioBruto = 0;
+        }
 
-        public double SalarioLiquido() => SalarioBruto - Desconto;
+        public Funcionario(string nome, string cpf, double salarioBruto)
+        {
+            this.nome = nome;
+            this.cpf = cpf;
+            this.salarioBruto = salarioBruto;
+        }
 
-        public void AumentarSalario(double porcentagem) => SalarioBruto += SalarioBruto * (porcentagem / 100);
+        public double SalarioLiquido() => salarioBruto - desconto;
+
+        public void AumentarSalario(double porcentagem) => salarioBruto = salarioBruto + (salarioBruto * (porcentagem / 100));
 
         public override string ToString()
         {
-            return "Dados do Funcionario: "
-                + Nome
-                + ", R$ "
+            return 
+                cpf
+                + ", "
+                + nome
+                + ", Sal. Bruto R$"
+                + salarioBruto.ToString("F2", CultureInfo.InvariantCulture)
+                + ", Sal. Liquido R$ "
                 + SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture);
         }
 
